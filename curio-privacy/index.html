@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>探所隐私政策</title>
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --paper: #f2efe7;
+    --ink: #1d1b16;
+    --muted: #8a8577;
+    --line: #ddd6c3;
+    --accent: #2e5e4e;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.75;
+    font-size: 16px;
+  }
+  main { max-width: 42em; margin: 0 auto; padding: 48px 22px 80px; }
+  h1 { font-size: 26px; font-weight: 650; margin: 18px 0 14px; line-height: 1.35; }
+  h2 { font-size: 19px; font-weight: 650; margin: 34px 0 10px; padding-top: 10px; border-top: 1px solid var(--line); }
+  h3 { font-size: 16.5px; font-weight: 650; margin: 22px 0 8px; }
+  p { margin: 10px 0; }
+  ul, ol { margin: 10px 0 10px 1.4em; }
+  li { margin: 5px 0; }
+  blockquote { margin: 14px 0; padding: 10px 16px; border-left: 3px solid var(--accent); background: #ece8dc; border-radius: 0 6px 6px 0; color: #3a372f; }
+  blockquote p { margin: 4px 0; }
+  hr { border: none; border-top: 1px solid var(--line); margin: 26px 0; }
+  .tablewrap { overflow-x: auto; margin: 14px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #ece8dc; font-weight: 650; white-space: nowrap; }
+  a { color: var(--accent); }
+  strong { font-weight: 650; }
+  footer { max-width: 42em; margin: 0 auto; padding: 0 22px 44px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+<h1>探所隐私政策</h1>
+<p><strong>生效日期</strong>：2026 年 8 月 9 日
+<strong>适用版本</strong>：受邀内测版（TestFlight）</p>
+<p>这份政策说明探所收集什么、不收集什么、交给了谁、存多久，以及你怎么把它删掉。
+我们尽量写得能读完。</p>
+<hr>
+<h2>1. 我们收集什么</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>类别</th>
+<th>具体是什么</th>
+<th>为什么要</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>账号标识</strong></td>
+<td>一个内部账号 ID；若你用 Apple 账号登录，还有 Apple 返回的稳定标识和经签名验证的邮箱（可能是 Apple 的私密转发地址）；若你不登录，则是一个绑定本设备的匿名标识</td>
+<td>让你的收藏和订阅跟着账号走</td>
+</tr>
+<tr>
+<td><strong>你创建的探子配置</strong></td>
+<td>你写的主题、指令、来源清单及其历史版本</td>
+<td>探子要按它运行</td>
+</tr>
+<tr>
+<td><strong>订阅与阅读行为</strong></td>
+<td>你订阅了哪些探子、读了哪条探报、读了多久、有没有点「有用」「收藏」「隐藏」「分享」「截图」、你的追问文本</td>
+<td>决定明天给你看什么，以及改进产品</td>
+</tr>
+<tr>
+<td><strong>设备推送标识</strong></td>
+<td>你的设备推送令牌（APNs token）、设备型号、app 版本</td>
+<td>早班探报的推送通知</td>
+</tr>
+<tr>
+<td><strong>运行与诊断数据</strong></td>
+<td>探子运行的成功 / 失败、耗时、条数、成本、错误摘要；崩溃与性能数据</td>
+<td>排障与成本控制</td>
+</tr>
+<tr>
+<td><strong>你主动给的</strong></td>
+<td>显示名、反馈邮件内容</td>
+<td>你让我们知道的</td>
+</tr>
+</tbody></table></div>
+<h2>2. 我们不收集什么</h2>
+<ul>
+<li><strong>不读通讯录、不读相册、不读位置</strong>，app 里没有请求这些权限的代码；</li>
+<li><strong>不做跨 app 跟踪</strong>，不接任何广告网络，不使用 IDFA；</li>
+<li><strong>不收集精确身份信息</strong>：不要你的手机号、身份证、住址、支付信息；</li>
+<li><strong>不把你的探报内容或追问文本用于训练我们自己的模型</strong>；</li>
+<li>在探子的运行诊断里，<strong>不记录 prompt 原文、来源网页正文、URL 的查询参数、令牌与凭据</strong>。</li>
+</ul>
+<hr>
+<h2>3. 我们把数据交给了谁</h2>
+<p>要让探所跑起来，我们用了一些第三方服务。下面是完整清单 —— 每一项都写清楚它拿到了什么。</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>服务</th>
+<th>用来做什么</th>
+<th>它能拿到什么</th>
+<th>边界</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Apple</strong>（Sign in with Apple · 推送 · TestFlight 分发）</td>
+<td>手机与电脑端登录、推送通知、内测分发</td>
+<td>登录时：Apple 掌握你的 Apple ID，并向我们返回一个稳定标识与（可选的）邮箱；推送时：Apple 收到你的设备令牌和推送内容</td>
+<td>登录必需。「用 Codex / Claude Code 创建探子」时在电脑浏览器里的登录也是它，与手机同一个 Apple ID，我们不会因此多拿任何信息。你可以用 Apple 的「隐藏邮箱」，不影响任何功能</td>
+</tr>
+<tr>
+<td><strong>Supabase</strong></td>
+<td>账号登录会话的签发与校验；托管我们的数据库</td>
+<td>你的账号标识与<strong>全部业务数据</strong>（探子、探报、订阅、阅读记录）</td>
+<td>数据托管必需。这是我们的主数据库</td>
+</tr>
+<tr>
+<td><strong>Railway</strong></td>
+<td>跑我们的服务器与定时任务</td>
+<td>服务运行期流经的数据与运行日志</td>
+<td>托管必需</td>
+</tr>
+<tr>
+<td><strong>PostHog</strong>（美国区）</td>
+<td>产品分析（哪些功能被用、探报读没读完）</td>
+<td>一个由我们派发的<strong>稳定伪名标识</strong>（不是你的邮箱）+ 交互事件</td>
+<td>不用于广告，不跨 app 跟踪</td>
+</tr>
+<tr>
+<td><strong>Sentry</strong></td>
+<td>崩溃与错误监控</td>
+<td>app 崩溃与性能数据（<strong>不关联你的身份</strong>）；服务端错误上下文</td>
+<td>客户端明确关闭了个人信息上报</td>
+</tr>
+<tr>
+<td><strong>DeepSeek</strong></td>
+<td><strong>主要的模型服务</strong> —— 生成探报、回答你的追问</td>
+<td>你的探子配置与指令、抓到的公开来源正文、你的追问文本</td>
+<td>生成探报必需</td>
+</tr>
+<tr>
+<td><strong>OpenRouter</strong></td>
+<td>DeepSeek 故障时的备用通道（转发同款模型）</td>
+<td>同上，仅在故障切换时</td>
+<td>仅兜底</td>
+</tr>
+<tr>
+<td><strong>OpenAI</strong></td>
+<td>文本向量化（用于去重与关联）+ 内容安全审核</td>
+<td>探报标题与摘要文本；送审的文本</td>
+<td>不用于生成探报正文</td>
+</tr>
+</tbody></table></div>
+<p><strong>我们没有做的事</strong>：不出售你的数据、不与广告商共享、不为了商业目的把你的探子内容提供给第三方。
+上面每一项都是「为了让功能跑起来」而必需的。我们使用的模型服务可能随运行状况调整，
+个别功能（如探子的补充搜索）当前未启用 —— 任何一项变更或启用时，我们会更新本页清单。</p>
+<blockquote>
+<p><strong>另有一个不涉及你数据的通道</strong>：我们用 Resend 给运营者本人发每日运营摘要邮件，
+收件人锁定为运营者自己的邮箱，<strong>内容不包含任何用户数据</strong>。</p>
+</blockquote>
+<hr>
+<h2>4. 数据保留多久</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>类别</th>
+<th>保留多久</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>你的探子、探报、订阅、收藏、阅读记录</strong></td>
+<td><strong>账号存在期间一直保留</strong>，不会因为一段时间不用就自动删除</td>
+</tr>
+<tr>
+<td><strong>创建过程的中间数据 · 操作台账 · 安全审计 · 运行遥测 · 反馈句柄</strong></td>
+<td>从最后一次活动起最多 <strong>180 天</strong></td>
+</tr>
+<tr>
+<td><strong>不含内容的运行遥测</strong></td>
+<td>最多 <strong>180 天</strong>；不包含 prompt 原文、来源正文、URL 查询参数</td>
+</tr>
+<tr>
+<td><strong>产品分析事件（PostHog）</strong></td>
+<td>按该分析服务的官方保留政策执行，最长 7 年（其官方口径：付费档 7 年、免费档 1 年）</td>
+</tr>
+<tr>
+<td><strong>崩溃数据（Sentry）</strong></td>
+<td>按该服务的官方默认保留策略执行（90 天）</td>
+</tr>
+<tr>
+<td><strong>删号后的最小安全审计</strong></td>
+<td>见第 6 节</td>
+</tr>
+</tbody></table></div>
+<p>具体到每一类对象的完整保留口径，见我们的保留策略说明（与本节一致，不另立标准）。</p>
+<hr>
+<h2>5. 你的权利，以及现在怎么行使</h2>
+<p>内测阶段用户很少，所以这些都走<strong>人工通道</strong> —— 发邮件到 <a href="mailto:wheam.me@gmail.com">wheam.me@gmail.com</a> 就行，你会收到真人回复。</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>你想做什么</th>
+<th>现在怎么做</th>
+<th>多久</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>看我们存了你什么</strong></td>
+<td>发邮件要一份导出</td>
+<td>7 个工作日内</td>
+</tr>
+<tr>
+<td><strong>导出你的探子配置和探报</strong></td>
+<td>同上</td>
+<td>同上</td>
+</tr>
+<tr>
+<td><strong>改正错误信息</strong></td>
+<td>app 内可改显示名；其余发邮件</td>
+<td>同上</td>
+</tr>
+<tr>
+<td><strong>删除账号和数据</strong></td>
+<td>发邮件说明要删</td>
+<td>见第 6 节</td>
+</tr>
+<tr>
+<td><strong>关闭个性化排序</strong></td>
+<td>app 内「设置 → 个性化」自助关闭</td>
+<td>立即生效</td>
+</tr>
+<tr>
+<td><strong>关闭推送</strong></td>
+<td>app 内「设置 → 通知」或系统设置</td>
+<td>立即生效</td>
+</tr>
+</tbody></table></div>
+<blockquote>
+<p>我们计划在正式上架时把导出和删除做成 app 内的自助按钮；内测阶段先用邮件，是因为
+受邀用户只有个位数，人工做比做个半成品按钮更可靠。</p>
+</blockquote>
+<hr>
+<h2>6. 删除账号时会发生什么</h2>
+<ol>
+<li><strong>立刻</strong>：停止你名下所有探子的运行，撤销访问凭据，停止一切代表你的写入；</li>
+<li><strong>30 天内</strong>：删除全部业务内容 —— 探子配置及各版本、探报、订阅、收藏、
+阅读记录、创建过程中间数据。这段时间内你反悔可以恢复；</li>
+<li><strong>之后</strong>：只保留<strong>不包含任何内容</strong>的最小安全审计 —— 只有不可逆的身份摘要、动作、结果、
+时间和授权版本，<strong>不含</strong>探子配置、prompt、URL、令牌、邮箱或第三方原始回包。
+保留 180 天后删除或不可逆匿名化。</li>
+</ol>
+<p><strong>关于第三方</strong>：我们会同步删除自己数据库里的内容；第三方服务（如分析与崩溃监控）中的
+残留数据按各自的保留策略过期，我们会向它们发出删除请求。</p>
+<p><strong>安全例外</strong>：如果我们发现异常使用（例如探子被用于抓取违法内容，或运行成本出现异常），
+我们可能把与该事件相关的、<strong>不含内容的</strong>最小审计记录，保留到事件处理完毕后
+90 天。这类记录只有运营者本人可以访问，且每次访问都会被记录。</p>
+<hr>
+<h2>7. 数据存在哪里</h2>
+<p>我们的数据库、服务器和主要第三方服务位于<strong>美国</strong>。如果你在其他国家或地区使用探所，
+你的数据会被传输到美国并在那里处理。</p>
+<hr>
+<h2>8. 儿童</h2>
+<p>探所不面向 13 岁以下的儿童设计，也不会有意收集他们的信息。
+内测阶段仅向受邀的成年用户开放。</p>
+<hr>
+<h2>9. 政策变更</h2>
+<p>有实质性变更时，我们会更新页面顶部的生效日期，并在 app 内告知。</p>
+<hr>
+<h2>10. 联系我们</h2>
+<ul>
+<li><strong>联系方式</strong>：<a href="mailto:wheam.me@gmail.com">wheam.me@gmail.com</a></li>
+<li><strong>数据相关请求</strong>（导出 / 删除 / 更正）：同上，请在标题里写明。</li>
+</ul>
+<p>有任何问题，直接写邮件就行。</p>
+
+
+</main>
+<footer>探所 · Curio — 受邀内测版文档</footer>
+</body>
+</html>
